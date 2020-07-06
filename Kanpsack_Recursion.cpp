@@ -27,7 +27,7 @@ int main() {
     
     result = knapsack(wt, val, weightOfBag, n); 
     
-    cout<<result;
+   cout<<"Total Possible profit earned can be: "<<result;
     
     return 0; 
 }
