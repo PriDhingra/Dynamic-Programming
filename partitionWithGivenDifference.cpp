@@ -63,7 +63,7 @@ int findWays(vector<int> &num, int tar)
             if(num[ind] <= targ)
                 take = dp[ind - 1][targ - num[ind]];
 
-            dp[ind][targ] = take + notTake;
+            dp[ind][targ] = (take + notTake) % mod;
         }
     }
     
@@ -81,8 +81,5 @@ int countPartitions(int n, int d, vector<int> &arr) {
     
     return findWays(arr, (totalSum - d) / 2);
 }
-
-
-
 
 
